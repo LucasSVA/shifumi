@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6752a0213c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Shifumi</title>
+</head>
+
+<body>
+
+    <section class="title">
+        <h1> SHIFUMI</h1>
+        <h2 id="winner">Player VS Robot </h2>
+
+    </section>
+    <section class="container">
+        <div class="players">
+            <div class="gamer">
+                <img src="images/gamer.png" alt="gamer" class="player">
+                <button class="btn btn-scissors" onclick="chosen('scissors')"><img src="images/scissors.png"
+                        alt="scissors" class="object"></button>
+                <button class="btn btn-paper" onclick="chosen('paper')"><img src="images/paper.png" alt="paper"
+                        class="object"></button>
+                <button class="btn btn-stone" onclick="chosen('stone')"><img src="images/stone.png" alt="stone"
+                        class="object"></button>
+            </div>
+            <div class="robot">
+                <img src="images/robot.png" alt="robot" class="player ">
+                <img id="robot-img" class="robot-img">
+            </div>
+
+        </div>
+        <div class="scores">
+            <div id="table" class="rounds"></div>
+            <div class="liveScore">
+                <p id="score">Robot - 0 : 0 - Player</p>
+            </div>
+            <div class="refresh">
+                <button onclick="refresh()" id="refresh">Try again</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
